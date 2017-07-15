@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
+
 import whois
 import json
 import argparse
-import pythonwhois
+# import pythonwhois
 import datetime
 import sys
 
@@ -19,6 +21,8 @@ domain = whois.query(data)
 parsed = domain.__dict__
 
 #change unparseble data
+
+# use try except 
 if 'last_updated' in parsed: 
     parsed["last_updated"] = parsed["last_updated"].isoformat()
 if 'expiration_date' in parsed:
