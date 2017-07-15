@@ -1,7 +1,7 @@
 import whois
 import json
 import argparse
-import pythonwhois
+# import pythonwhois
 import datetime
 import sys
 
